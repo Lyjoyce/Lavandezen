@@ -1,0 +1,47 @@
+.back-actions [role="button"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    background-color: var(--green-deep); 
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.back-actions [role="button"]:hover,
+.back-actions [role="button"]:focus {
+    background-color: var(--green-light);
+    color: var(--text-main);
+    transform: translateY(-2px);
+    outline: none;
+}
+  
+.back-home [role="button"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    background-color: var(--rose-soft); /* rose doux */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.back-home [role="button"]:hover,
+.back-home [role="button"]:focus {
+    background-color: var(--green-light);
+    color: var(--text-main);
+    transform: translateY(-2px);
+    outline: none;
+}
