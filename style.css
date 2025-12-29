@@ -1,0 +1,155 @@
+:root { 
+    --bg-main: #F4F4F4;
+    --text-main: #272727;
+    --green-deep: #4E6961;       /* Titres principaux et accents */
+    --green-light: #6EAFA3;      /* Sections douces / respiration visuelle */
+    --rose-soft: #BF5360;        /* Bouton principal / accents joyeux */
+    --yellow-soft: #F3E9C6;      /* Sections encadrées légères */
+}
+/* --- Logo Lavandezen --- */
+.logo {
+    font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+/* L majuscule en rose grenadine */
+.logo-l {
+    color: #BF5360; /* Rose grenadine accessible */
+}
+
+/* Reste du mot en vert profond */
+.logo-rest {
+    color: var(--green-deep); /* #4E6961 */
+}
+
+/* Baseline douce */
+.baseline {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    max-width: 45ch;
+}
+
+/* --- Header spacing --- */
+header {
+    margin-bottom: 2rem;
+}
+
+/* --- Base générale --- */
+body {
+    margin: 0;
+    font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* --- Structure --- */
+header,
+main,
+footer {
+    max-width: 800px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+/* --- Titres --- */
+h1 {
+    color: var(--green-deep);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* --- Paragraphes --- */
+p {
+    margin-bottom: 1rem;
+}
+
+/* --- Sections --- */
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Section douce / respiration visuelle */
+section.respiration {
+    background-color: var(--green-light);
+    color: #fff;
+}
+
+/* Section encadrée / légère */
+section.encadre {
+    background-color: var(--yellow-soft);
+    color: var(--text-main);
+}
+
+/* --- Navigation / bouton principal --- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: var(--rose-soft);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--green-deep);
+    color: #fff;
+}
+
+nav a:focus {
+    outline: 3px solid #272727;
+    outline-offset: 4px;
+}
+
+/* --- Lien d’évitement --- */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    background: var(--yellow-soft);
+    padding: 0.5rem;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+}

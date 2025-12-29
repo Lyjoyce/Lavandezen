@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavandezen – Choisis ton moment de calme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lavandezen : choisis une action simple pour te détendre. Plante, animal ou exercice audio. Accessible et doux.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stress.css">
+</head>
+<body>
+
+    <!-- Lien d’évitement -->
+    <a href="#contenu-principal" class="skip-link">
+        Aller au contenu principal
+    </a>
+
+    <!-- Header avec logo -->
+    <header>
+        <a href="/" class="logo">
+            <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
+        </a>
+
+        <p class="baseline">
+            Un espace pour faire une pause et respirer.
+        </p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="contenu-principal">
+
+        <!-- H1 spécifique à la page -->
+        <h1>Choisis une action pour te calmer</h1>
+
+        <p>
+            Tu peux prendre un moment pour toi, à ton rythme.
+        </p>
+
+        <!-- Section Plante -->
+        <section class="respiration" aria-labelledby="plante-titre">
+            <h2 id="plante-titre">🌱 Une plante pour apaiser</h2>
+            <p>
+                Découvre la <strong>lavande</strong> : son parfum et sa couleur
+                peuvent aider à se détendre.
+            </p>
+            <p>
+                Ce n’est pas un conseil médical, juste une invitation
+                à calmer ton esprit.
+            </p>
+        </section>
+
+        <!-- Section Animal -->
+        <section class="encadre" aria-labelledby="animal-titre">
+            <h2 id="animal-titre">🐾 Un animal qui aide à se calmer</h2>
+            <p>
+                Observe un animal que tu aimes, réel ou imaginaire.
+                Imagine ses mouvements doux et sa présence rassurante.
+            </p>
+            <p>
+                Les animaux peuvent nous aider à ralentir
+                et à nous sentir soutenu(e).
+            </p>
+        </section>
+
+        <!-- Section Exercice audio -->
+        <section class="respiration" aria-labelledby="audio-titre">
+            <h2 id="audio-titre">🎧 Exercice audio</h2>
+            <p>
+                Clique sur le bouton ci-dessous pour écouter
+                un court exercice de respiration guidée
+                (environ 3 minutes).
+            </p>
+
+            <button type="button" onclick="document.getElementById('audio').play();">
+                Lancer l’audio
+            </button>
+
+            <audio id="audio" controls>
+                <source src="exercice.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l’élément audio.
+            </audio>
+        </section>
+
+        <!-- Navigation secondaire -->
+        <nav aria-label="Navigation secondaire">
+            <ul>
+                <li>
+                    <a href="index.html" role="button">
+                        Retour à l’accueil
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </main>
+
+    <footer>
+        <section class="encadre">
+            <h3>
+                <a href="/" class="logo">
+                    <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
+                </a> – Ce contenu ne remplace pas un avis médical.
+            </h3>
+        </section>
+    </footer>
+
+</body>
+</html>
