@@ -61,9 +61,6 @@ main{
 h1 {
     color: var(--bg-main);
     font-weight: 600;
-}
-
-h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
