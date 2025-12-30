@@ -62,7 +62,7 @@ button:focus {
 .button-secondary:hover,
 .button-secondary:focus {
     background-color: var(--green-light);
-    color: var(--text-main);
+    color: var(--bg-main);
 }
 
 /* =========================
