@@ -15,6 +15,25 @@
 /* =========================
    BASE GÉNÉRALE (MOBILE FIRST)
 ========================= */
+/* Texte accessible mais invisible pour les utilisateurs visuels */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* Icône maison à côté du logo */
+.logo-home-icon {
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    color: var(--rose-soft); /* ou currentColor pour suivre le texte */
+}
+
 body {
     margin: 0;
     font-family: "Atkinson Hyperlegible", Arial, sans-serif;
