@@ -1,43 +1,20 @@
-:root { 
+/* =========================
+   VARIABLES GLOBALES
+========================= */
+:root {
     --bg-main: #F4F4F4;
     --text-main: #272727;
-    --green-deep: #4E6961;       /* Titres principaux et accents */
-    --green-light: #6EAFA3;      /* Sections douces / respiration visuelle */
-    --rose-soft: #BF5360;        /* Bouton principal / accents joyeux */
-    --yellow-soft: #F3E9C6;      /* Sections encadrées légères */
-}
-/* --- Logo Lavandezen --- */
-.logo {
-    font-family: "Atkinson Hyperlegible", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.2;
-    text-decoration: none;
+
+    --green-deep: #4E6961;
+    --green-light: #6EAFA3;
+
+    --rose-soft: #BF5360;
+    --yellow-soft: #F3E9C6;
 }
 
-/* L majuscule en rose grenadine */
-.logo-l {
-    color: #BF5360; /* Rose grenadine accessible */
-}
-
-/* Reste du mot en vert profond */
-.logo-rest {
-    color: var(--green-deep); 
-}
-
-/* Baseline douce */
-.baseline {
-    font-size: 1rem;
-    margin-top: 0.25rem;
-    max-width: 45ch;
-}
-
-/* --- Header spacing --- */
-header {
-    margin-bottom: 2rem;
-}
-
-/* --- Base générale --- */
+/* =========================
+   BASE GÉNÉRALE
+========================= */
 body {
     margin: 0;
     font-family: "Atkinson Hyperlegible", Arial, sans-serif;
@@ -46,7 +23,9 @@ body {
     line-height: 1.6;
 }
 
-/* --- Structure --- */
+/* =========================
+   STRUCTURE
+========================= */
 header,
 main,
 footer {
@@ -54,14 +33,46 @@ footer {
     margin: auto;
     padding: 1.5rem;
 }
-main{
+
+header {
+    margin-bottom: 2rem;
+}
+
+main {
     background-color: var(--text-main);
 }
-/* --- Titres --- */
+
+/* =========================
+   LOGO
+========================= */
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-l {
+    color: var(--rose-soft);
+}
+
+.logo-rest {
+    color: var(--green-deep);
+}
+
+.baseline {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    max-width: 45ch;
+}
+
+/* =========================
+   TITRES & TEXTE
+========================= */
 h1 {
     color: var(--bg-main);
-    font-weight: 600;
     font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -70,63 +81,51 @@ h2 {
     margin-bottom: 0.75rem;
 }
 
-/* --- Paragraphes --- */
 p {
     margin-bottom: 1rem;
 }
 
-/* --- Sections --- */
+/* =========================
+   SECTIONS
+========================= */
 section {
     margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-/* Section douce / respiration visuelle */
 section.respiration {
     background-color: var(--green-light);
-    color: var(--text-main);
 }
 
-/* Section encadrée / légère */
 section.encadre {
     background-color: var(--yellow-soft);
-    color: var(--text-main);
 }
 
-/* --- Navigation / bouton principal --- */
+/* =========================
+   AUDIO
+========================= */
+audio {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* =========================
+   NAV LISTES
+========================= */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 1.5rem;
-    background-color: var(--rose-soft);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover,
-nav a:focus {
-    background-color: var(--green-deep);
-    color: #fff;
-}
-
-nav a:focus {
-    outline: 3px solid #272727;
-    outline-offset: 4px;
-}
-
-/* --- Lien d’évitement --- */
+/* =========================
+   SKIP LINK
+========================= */
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -137,21 +136,19 @@ nav a:focus {
     top: 1rem;
     background: var(--yellow-soft);
     padding: 0.5rem;
-    z-index: 1000;
     border-radius: 4px;
+    z-index: 1000;
 }
 
-/* --- Responsiveness --- */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 600px) {
     h1 {
         font-size: 1.5rem;
     }
+
     h2 {
         font-size: 1.25rem;
-    }
-    nav a {
-        width: 90%;
-        text-align: center;
-        padding: 0.75rem 1rem;
     }
 }

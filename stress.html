@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Lavandezen : choisis une action simple pour te détendre. Plante, animal ou exercice audio. Accessible et doux.">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stress.css">
+    <link rel="stylesheet" href="buttons.css">
 </head>
 <body>
 
@@ -79,16 +79,31 @@
             </button>
 
             <audio id="audio" controls>
-                <source src="exercice.mp3" type="audio/mpeg">
+                <source src="audio/stress-respiration-exercice.mp3" type="audio/mpeg">
                 Votre navigateur ne supporte pas l’élément audio.
             </audio>
         </section>
+                <!-- Autres besoins -->
+        <section class="encadre" aria-labelledby="besoins-titre">
+            <h2 id="besoins-titre">Aujourd’hui, j’ai besoin de…</h2>
+
+            <p>
+                Parfois, le stress se manifeste aussi dans le corps,
+                comme au niveau de la digestion.
+            </p>
+
+            <a href="besoin-digestion.html" role="button" class="button">
+                Digérer plus sereinement
+            </a>
+
+        </section>
+
 
         <!-- Navigation secondaire -->
         <nav aria-label="Navigation secondaire">
             <ul>
                 <li>
-                    <a href="index.html" role="button">
+                    <a href="index.html" class="back-home" role="button">
                         Retour à l’accueil
                     </a>
                 </li>

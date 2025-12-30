@@ -1,0 +1,83 @@
+/* =========================
+   BOUTON DE BASE
+========================= */
+.button,
+a[role="button"],
+a[role="button-secondary"],
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0;
+
+    background-color: var(--rose-soft);
+    color: #fff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* =========================
+   HOVER / FOCUS
+========================= */
+.button:hover,
+.button:focus,
+a[role="button"]:hover,
+a[role="button"]:focus,
+a[role="button-secondary"]:hover,
+a[role="button-secondary"]:focus,
+button:hover,
+button:focus {
+    background-color: var(--yellow-soft);
+    color: var(--text-main);
+    transform: translateY(-2px);
+}
+
+/* Focus visible accessibilité */
+.button:focus,
+a[role="button"]:focus,
+a[role="button-secondary"]:focus,
+button:focus {
+    outline: 3px solid #272727;
+    outline-offset: 4px;
+}
+
+/* =========================
+   VARIANTE SECONDAIRE
+========================= */
+.button-secondary,
+a[role="button-secondary"] {
+    background-color: var(--green-deep);
+}
+
+/* Hover / focus variante secondaire */
+.button-secondary:hover,
+.button-secondary:focus,
+a[role="button-secondary"]:hover,
+a[role="button-secondary"]:focus {
+    background-color: var(--green-light);
+    color: var(--text-main);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .button,
+    .button-secondary,
+    a[role="button"],
+    a[role="button-secondary"],
+    button {
+        width: 90%;
+        text-align: center;
+    }
+}
