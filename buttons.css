@@ -3,7 +3,6 @@
 ========================= */
 .button,
 a[role="button"],
-a[role="button-secondary"],
 button {
     display: flex;
     align-items: center;
@@ -27,25 +26,22 @@ button {
 }
 
 /* =========================
-   HOVER / FOCUS
+   HOVER / FOCUS (par défaut)
 ========================= */
 .button:hover,
 .button:focus,
 a[role="button"]:hover,
 a[role="button"]:focus,
-a[role="button-secondary"]:hover,
-a[role="button-secondary"]:focus,
 button:hover,
 button:focus {
-    background-color: var(--yellow-soft);
-    color: var(--text-main);
+    background-color: var(--green-deep);
+    color: var(--bg-main);
     transform: translateY(-2px);
 }
 
 /* Focus visible accessibilité */
 .button:focus,
 a[role="button"]:focus,
-a[role="button-secondary"]:focus,
 button:focus {
     outline: 3px solid #272727;
     outline-offset: 4px;
@@ -54,16 +50,14 @@ button:focus {
 /* =========================
    VARIANTE SECONDAIRE
 ========================= */
-.button-secondary,
-a[role="button-secondary"] {
+.button-secondary {
     background-color: var(--green-deep);
+    color: #fff;
 }
 
 /* Hover / focus variante secondaire */
 .button-secondary:hover,
-.button-secondary:focus,
-a[role="button-secondary"]:hover,
-a[role="button-secondary"]:focus {
+.button-secondary:focus {
     background-color: var(--green-light);
     color: var(--text-main);
 }
@@ -75,7 +69,6 @@ a[role="button-secondary"]:focus {
     .button,
     .button-secondary,
     a[role="button"],
-    a[role="button-secondary"],
     button {
         width: 90%;
         text-align: center;
