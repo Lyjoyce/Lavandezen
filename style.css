@@ -13,7 +13,7 @@
 }
 
 /* =========================
-   BASE GÉNÉRALE
+   BASE GÉNÉRALE (MOBILE FIRST)
 ========================= */
 body {
     margin: 0;
@@ -29,17 +29,13 @@ body {
 header,
 main,
 footer {
-    max-width: 800px;
     margin: auto;
-    padding: 1.5rem;
-}
-
-header {
-    margin-bottom: 2rem;
+    padding: 1.25rem;
 }
 
 main {
     background-color: var(--text-main);
+    padding-bottom: 3rem;
 }
 
 /* =========================
@@ -47,8 +43,7 @@ main {
 ========================= */
 .logo {
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.2;
+    font-size: 1.75rem;
     text-decoration: none;
 }
 
@@ -61,7 +56,7 @@ main {
 }
 
 .baseline {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-top: 0.25rem;
     max-width: 45ch;
 }
@@ -71,14 +66,12 @@ main {
 ========================= */
 h1 {
     color: var(--bg-main);
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
 }
 
 p {
@@ -89,7 +82,7 @@ p {
    SECTIONS
 ========================= */
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     padding: 1rem;
     border-radius: 8px;
     display: flex;
@@ -110,17 +103,25 @@ section.encadre {
 ========================= */
 audio {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     border-radius: 8px;
 }
 
 /* =========================
-   NAV LISTES
+   NAV
 ========================= */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+nav[aria-label="Action principale"] {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+nav[aria-label="Action principale"] a[role="button"] {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* =========================
@@ -141,14 +142,25 @@ nav ul {
 }
 
 /* =========================
-   RESPONSIVE
+   ÉCRANS PLUS LARGES
 ========================= */
-@media (max-width: 600px) {
+@media (min-width: 768px) {
+    header,
+    main,
+    footer {
+        max-width: 800px;
+        padding: 1.5rem;
+    }
+
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+    }
+
+    audio {
+        max-width: 400px;
     }
 }

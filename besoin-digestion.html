@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Lavandezen – Digérer plus sereinement</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Lavandezen : une page douce et accessible pour aider à digérer plus sereinement, à son rythme, sans pression.">
+    <meta name="description"
+        content="Lavandezen : une page douce et accessible pour aider à digérer plus sereinement, à son rythme, sans pression.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="buttons.css">
 </head>
+
 <body>
 
     <!-- Lien d’évitement -->
@@ -85,38 +88,32 @@
             </p>
         </section>
 
-        <!-- Section audio (prévue) -->
-        <section class="respiration" aria-labelledby="audio-titre">
-            <h2 id="audio-titre">🎧 Écouter un exercice guidé</h2>
+        <!-- Section audio -->
+        <section class="respiration" aria-labelledby="audio-digestion-titre">
+            <h2 id="audio-digestion-titre">🎧 Écouter un exercice guidé</h2>
+
             <p>
                 Si tu préfères écouter plutôt que lire,
-                un exercice audio doux sera bientôt disponible ici.
+                cet exercice audio te guide doucement
+                pour relâcher les tensions liées à la digestion.
             </p>
+
             <p>
-                Tu pourras simplement t’installer confortablement
-                et te laisser guider.
+                Tu peux t’installer confortablement,
+                fermer les yeux si tu le souhaites,
+                et simplement te laisser guider.
+            </p>
+
+            <audio controls preload="none">
+                <source src="audio/besoin-digestion.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l’audio.
+            </audio>
+
+            <p>
+                Tu peux mettre pause à tout moment,
+                ou réécouter plus tard, sans obligation.
             </p>
         </section>
-        <section class="respiration" aria-labelledby="audio-digestion-titre">
-    <h2 id="audio-digestion-titre">🎧 Écouter l’exercice guidé</h2>
-
-    <p>
-        Tu peux écouter cet exercice audio
-        si tu préfères te reposer sans lire.
-    </p>
-
-    <audio controls preload="none">
-        <source src="audio/besoin-digestion.mp3" type="audio/mpeg">
-        Votre navigateur ne supporte pas l’audio.
-    </audio>
-
-    <p>
-        Tu peux mettre pause à tout moment
-        ou réécouter plus tard.
-    </p>
-</section>
-
-
         <!-- Navigation -->
         <nav aria-label="Navigation">
             <ul>
@@ -148,4 +145,5 @@
     </footer>
 
 </body>
+
 </html>
