@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>À propos – Lavandezen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Lavandezen est un espace simple, accessible et non médical pour faire une pause, respirer et retrouver un peu de calme, à son rythme.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons.css">
+</head>
+
+<body>
+
+    <!-- Lien d’évitement -->
+    <a href="#contenu-principal" class="skip-link">
+        Aller au contenu principal
+    </a>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo" aria-label="Lavandezen, retour à l’accueil">
+            <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
+        </a>
+
+        <p class="baseline">
+            Un espace pour faire une pause et respirer.
+        </p>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="contenu-principal">
+
+        <h1>À propos de Lavandezen</h1>
+
+        <p>
+            Lavandezen est né d’un besoin simple :
+            avoir un endroit calme, accessible et respectueux
+            quand le stress, la fatigue ou la surcharge sont présents.
+        </p>
+
+        <!-- Section manifeste -->
+        <section class="encadre" aria-labelledby="manifeste-titre">
+            <h2 id="manifeste-titre">🌿 L’intention</h2>
+
+            <p>
+                <strong>Lavandezen est un espace sûr et accessible
+                    pour faire une pause, ralentir
+                    et retrouver un peu de calme,
+                    sans pression et sans promesse.</strong>
+            </p>
+
+            <p>
+                Ici, il n’y a rien à réussir,
+                rien à optimiser,
+                rien à remplir.
+            </p>
+        </section>
+
+        <!-- Section pour qui -->
+        <section class="respiration" aria-labelledby="pour-qui-titre">
+            <h2 id="pour-qui-titre">Pour qui est ce site ?</h2>
+
+            <p>
+                Lavandezen s’adresse aux personnes
+                qui se sentent stressées, fatiguées,
+                sensibles ou simplement dépassées.
+            </p>
+
+            <p>
+                Il est pensé pour celles et ceux
+                qui ont besoin de simplicité,
+                de lenteur,
+                et d’un environnement numérique apaisant.
+            </p>
+
+            <p>
+                Tu peux rester quelques minutes,
+                ou partir tout de suite.
+                Les deux sont parfaitement ok.
+            </p>
+        </section>
+
+        <!-- Section accessibilité humaine -->
+        <section class="encadre" aria-labelledby="accessibilite-titre">
+            <h2 id="accessibilite-titre">Accessibilité, concrètement</h2>
+
+            <p>
+                Lavandezen a été conçu pour être utilisable
+                même quand l’énergie est basse.
+            </p>
+
+            <p>
+                Les contenus sont courts,
+                le vocabulaire est simple,
+                et la navigation fonctionne au clavier
+                et avec les lecteurs d’écran.
+            </p>
+
+            <p>
+                Tu peux lire ou écouter.
+                Tu peux mettre pause.
+                Tu peux revenir plus tard.
+            </p>
+
+            <p>
+                L’accessibilité ici n’est pas une obligation technique,
+                mais une façon de prendre soin.
+            </p>
+        </section>
+
+        <!-- Section non médical -->
+        <section class="respiration" aria-labelledby="non-medical-titre">
+            <h2 id="non-medical-titre">Un espace non médical</h2>
+
+            <p>
+                Lavandezen ne remplace pas
+                un avis médical ou thérapeutique.
+            </p>
+
+            <p>
+                Les propositions faites ici
+                sont des invitations douces :
+                observer, respirer, écouter, imaginer.
+            </p>
+
+            <p>
+                Tu restes libre de ce que tu en fais.
+            </p>
+        </section>
+
+
+        <!-- Navigation -->
+        <nav aria-label="Navigation">
+            <ul>
+                <li>
+                    <a href="index.html" role="button" class="button">
+                        Retour à l’accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="stress.html" role="button" class="button-secondary">
+                        Explorer les moments de calme
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </main>
+    <section class="respiration" aria-labelledby="audio-apropos-titre">
+        <h2 id="audio-apropos-titre">🎧 Écouter la présentation</h2>
+
+        <p>
+            Si tu préfères écouter plutôt que lire,
+            tu peux lancer ce court audio.
+        </p>
+
+        <audio controls preload="none">
+            <source src="audio/a-propos-lavandezen.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l’audio.
+        </audio>
+
+        <p>
+            Durée : environ 45 secondes.
+        </p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <section class="encadre">
+            <h3>
+                <a href="index.html" class="logo" aria-label="Retour à l’accueil – Logo de Lavandezen">
+                    <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
+
+                    <!-- Icône maison décorative -->
+                    <svg class="logo-home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                        height="18" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg>
+
+                    <span class="sr-only"> – Retour à l’accueil</span>
+                </a>
+            </h3>
+
+            <nav aria-label="Informations complémentaires">
+                <ul>
+                    <li>
+                        <a href="a-propos.html">
+                            À propos de Lavandezen
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p>
+                Ce contenu ne remplace pas un avis médical.
+            </p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

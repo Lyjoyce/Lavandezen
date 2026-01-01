@@ -1,0 +1,1 @@
+Lavandezen est un espace sûr et accessible pour faire une pause, ralentir et retrouver un peu de calme, sans pression et sans promesse.

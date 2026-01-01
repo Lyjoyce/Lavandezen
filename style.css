@@ -160,6 +160,23 @@ nav[aria-label="Action principale"] a[role="button"] {
     z-index: 1000;
 }
 
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0;
+}
+
+footer nav a {
+    color: var(--text-main);
+    font-size: 0.95rem;
+    text-decoration: underline;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+    text-decoration: none;
+}
+
 /* =========================
    ÉCRANS PLUS LARGES
 ========================= */
