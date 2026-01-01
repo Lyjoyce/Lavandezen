@@ -1,0 +1,138 @@
+/* =========================
+   GUIDE LAVANDEZEN
+========================= */
+
+:root {
+  --paper: #ffffff;
+  --ink: #272727;
+  --accent: #6EAFA3;
+}
+
+/* Reset minimal */
+* {
+  box-sizing: border-box;
+}
+
+body.guide {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+  background: #eaeaea;
+  color: var(--ink);
+}
+
+/* PAGE */
+.page {
+  background: var(--paper);
+  width: 210mm;
+  height: 297mm;
+  margin: 2rem auto;
+  padding: 3cm;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  page-break-after: always;
+}
+
+/* TITRES */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* TEXTE */
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* COUVERTURE */
+.cover {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0;
+}
+
+footer nav a {
+    color: var(--ink);
+    font-size: 0.95rem;
+    text-decoration: underline;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+    text-decoration: none;
+}
+
+/* Impression */
+@media print {
+  body {
+    background: none;
+  }
+
+  .page {
+    margin: 0;
+  }
+}
+
+body.bw {
+  --paper: #ffffff;
+  --ink: #000000;
+  --accent: #000000;
+}
+/* =========================
+   MODE NOIR & BLANC
+========================= */
+
+body.bw {
+  --paper: #ffffff;
+  --ink: #000000;
+  --accent: #000000;
+}
+
+body.bw h1,
+body.bw h2,
+body.bw p {
+  color: var(--ink);
+}
+@media print {
+  body {
+    background: none;
+    color: #000;
+  }
+
+  .page {
+    background: #fff;
+    color: #000;
+  }
+
+  h1, h2, p {
+    color: #000 !important;
+  }
+}
+
