@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <title>Guides – Lavandezen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description"
-        content="Guides doux Lavandezen. Des invitations simples pour ralentir et respirer.">
+  <meta name="description" content="Guides doux Lavandezen. Des invitations simples pour ralentir et respirer.">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/buttons.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
         Sans objectif.
       </p>
 
-      <a href="guide-ralentir.html" class="button-secondary" role="button">
+      <a href="guides/guide-ralentir.html" class="button-secondary" role="button">
         Lire le guide
       </a>
     </section>
@@ -62,9 +63,23 @@
         Des sensations libres.
       </p>
 
-      <a href="guide-plantes-sensations.html" class="button-secondary" role="button">
+      <a href="guides/guide-plantes-sensations.html" class="button-secondary" role="button">
         Lire le guide
       </a>
+    </section>
+    <!-- GUIDE 3 -->
+    <section class="encadre">
+      <h2>Animaux & rythme</h2>
+
+      <p>
+        Observer un animal.<br>
+        Suivre son rythme.<br>
+        Retrouver un peu de calme.
+      </p>
+
+      <a href="guides/guide-animaux-rythme.html" class="button-secondary" role="button">
+        Lire le guide
+      </a>      
     </section>
 
     <!-- NOTE DISCRÈTE -->
@@ -83,6 +98,43 @@
     </nav>
 
   </main>
+  <!-- Footer -->
+  <footer>
+    <section class="encadre">
+      <h3>
+        <a href="index.html" class="logo" aria-label="Retour à l’accueil – Logo de Lavandezen">
+          <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
+
+          <!-- Icône maison décorative -->
+          <svg class="logo-home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+            aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+          </svg>
+
+          <span class="sr-only"> – Retour à l’accueil</span>
+        </a>
+      </h3>
+
+      <nav aria-label="Informations complémentaires">
+        <ul>
+          <li>
+            <a href="a-propos.html">
+              À propos de Lavandezen
+            </a>
+          </li>
+          <li>
+            <a href="charte-editoriale.html">Charte éditoriale</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>
+        Ce contenu ne remplace pas un avis médical.
+      </p>
+    </section>
+  </footer>
+
 
 </body>
+
 </html>
