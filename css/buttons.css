@@ -65,6 +65,22 @@ button:focus {
     color: var(--bg-main);
 }
 
+.button-soft {
+    text-decoration: none;
+    background: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--green-deep);
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+}
+
+.button-soft:hover,
+.button-soft:focus {
+    text-decoration: underline;
+    background: var(--green-deep);
+    color: var(--bg-main);
+}
+
 /* =========================
    ÉCRANS PLUS LARGES
 ========================= */
