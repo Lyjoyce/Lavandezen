@@ -13,13 +13,24 @@
 <body>
 
 <a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+  <header>
+        <a href="index.html" class="logo">
+            <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
 
-<header>
-    <a href="index.html" class="logo" aria-label="Retour à l’accueil – Lavandezen">
-        <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
-    </a>
-    <p class="baseline">Un espace pour faire une pause et respirer.</p>
-</header>
+            <!-- Petite icône maison visible -->
+            <svg class="logo-home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+
+            <!-- Texte invisible pour lecteurs d'écran -->
+            <span class="sr-only"> – Retour à l’accueil</span>
+        </a>
+        <p class="baseline">
+            Un espace pour faire une pause et respirer.
+        </p>
+    </header>
+
 
 <main id="contenu-principal">
 
@@ -59,7 +70,7 @@
         </ul>
     </section>
 
-    <section class="respiration" aria-labelledby="audio-charte-titre">
+    <section class="respiration">
         <h2 id="audio-charte-titre">🎧 Écouter la charte</h2>
 
         <p>
@@ -75,9 +86,9 @@
         <p>Durée : environ 45 secondes.</p>
     </section>
 
-    <nav aria-label="Navigation">
+    <nav>
         <ul>
-            <li><a href="index.html" role="button" class="button">Retour à l’accueil</a></li>
+            <li><a href="index.html" class="button">Retour à l’accueil</a></li>
         </ul>
     </nav>
 
@@ -86,7 +97,7 @@
 <footer>
         <section class="encadre">
             <h3>
-                <a href="index.html" class="logo" aria-label="Retour à l’accueil – Logo de Lavandezen">
+                <a href="index.html" class="logo">
                     <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
 
                     <!-- Icône maison décorative -->
@@ -99,7 +110,7 @@
                 </a>
             </h3>
 
-            <nav aria-label="Informations complémentaires">
+            <nav>
                 <ul>
                     <li>
                         <a href="a-propos.html">

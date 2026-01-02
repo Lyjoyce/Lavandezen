@@ -15,8 +15,17 @@
     </a>
 
     <header>
-        <a href="/" class="logo" aria-label="Logo de Lavandezen">
+        <a href="index.html" class="logo">
             <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
+
+            <!-- Petite icône maison visible -->
+            <svg class="logo-home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+            </svg>
+
+            <!-- Texte invisible pour lecteurs d'écran -->
+            <span class="sr-only"> – Retour à l’accueil</span>
         </a>
 
         <p class="baseline">
@@ -28,7 +37,7 @@
         <h1 id="intro-titre">Prendre quelques minutes pour soi</h1>
 
         <!-- Section introduction encadrée -->
-        <section class="encadre" aria-labelledby="intro-titre">
+        <section class="encadre">
             <h2>Faire une pause et respirer</h2>
             
             <p>
@@ -42,7 +51,7 @@
         </section>
 
         <!-- Section respiration visuelle -->
-        <section class="respiration" aria-labelledby="reassurance-titre">
+        <section class="respiration">
             <h2 id="reassurance-titre">Un espace sans pression</h2>
             <p>
                 Il n’y a rien à réussir, rien à remplir,
@@ -54,10 +63,10 @@
         </section>
 
         <!-- Section bouton principal -->
-        <nav aria-label="Action principale">
+        <nav>
             <ul>
                 <li>
-                    <a href="besoin-stress.html" role="button" class="button">
+                    <a href="besoin-stress.html" class="button">
                         Commencer doucement
                     </a>
                 </li>
@@ -69,7 +78,7 @@
     <footer>
     <section class="encadre">
         <h3>
-            <a href="index.html" class="logo" aria-label="Retour à l’accueil – Logo de Lavandezen">
+            <a href="index.html" class="logo">
                 <span class="logo-l">L</span><span class="logo-rest">avandezen</span>
 
                 <!-- Icône maison décorative -->
@@ -88,7 +97,7 @@
             </a>
         </h3>
 
-        <nav aria-label="Informations complémentaires">
+        <nav>
             <ul>
                 <li>
                     <a href="index-guides.html">Guides doux</a>
