@@ -117,6 +117,16 @@ section.encadre {
     background-color: var(--yellow-soft);
 }
 
+section.plante {
+      background-color: var(--green-light);
+      color: var(--text-main);
+    }
+
+    section.animal {
+      background-color: var(--yellow-soft);
+      color: var(--text-main);
+    }
+
 /* =========================
    AUDIO
 ========================= */

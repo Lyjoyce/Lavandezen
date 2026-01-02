@@ -60,26 +60,7 @@
     /* =========================
        SECTIONS
     ========================= */
-    section {
-      margin-bottom: 2.5rem;
-      padding: 1rem;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      background-color: var(--yellow-soft);
-      color: var(--text-main);
-    }
-
-    section.plante {
-      background-color: var(--green-light);
-      color: var(--text-main);
-    }
-
-    section.animal {
-      background-color: var(--yellow-soft);
-      color: var(--text-main);
-    }
+    
 
     /* =========================
        BOUTONS
@@ -96,7 +77,7 @@
       margin: 1rem 0;
       box-sizing: border-box;
       background-color: var(--rose-soft);
-      color: #fff;
+      color: var(--bg-main);
       border: none;
       border-radius: 10px;
       font-size: 1rem;
@@ -124,7 +105,7 @@
     .button-secondary:hover,
     .button-secondary:focus {
       background-color: var(--green-light);
-      color: var(--bg-main);
+      color: var(--text-main);
     }
 
     /* =========================
